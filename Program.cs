@@ -1,19 +1,13 @@
 ﻿using System;
 
-
 namespace JuniorMind
 {
     class Program
     {
         public static void Main(string[] args)
         {
-            string text = Console.ReadLine();
-            Print(text);
-        }
-
-        public static void Print(string text)
-        {
-            Console.WriteLine(text);
+            int a = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine(a % 2 == 1);
         }
     }
 }
