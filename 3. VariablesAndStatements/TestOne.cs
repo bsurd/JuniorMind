@@ -33,6 +33,6 @@ namespace JuniorMind.VariablesAndStatements
          * int a = Convert.ToInt32(Console.ReadLine());
          * Console.WriteLine(a % 2 == 1);
          */
-        public static void OddOrEven(int a) => Console.WriteLine(a % 2 == 1);
+        public static void IsNumberOdd(int a) => Console.WriteLine(a % 2 == 1);
     }
 }

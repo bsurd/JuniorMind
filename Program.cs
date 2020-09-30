@@ -8,6 +8,7 @@ namespace JuniorMind
         public static void Main(string[] args)
         {
             RunAllTestSolutions.RunSolutions();
+
         }
     }
 }
