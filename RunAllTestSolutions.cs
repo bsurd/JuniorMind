@@ -83,6 +83,14 @@ namespace JuniorMind
             Console.WriteLine("\n4.2 Solutions");
             Console.Write("With input: {0} result is: ", q);
             ConditionalStatements.TestTwo.FizzBuzz(q);
+            Console.WriteLine("With {0} cash result is: ", z);
+            ConditionalStatements.TestTwo.ShoppingList(z);
+
+            Console.WriteLine("\n4.3 Solutions");
+            string[] zodiac = { "Berbec", "Taur", "Gemeni", "Rac", "Leu", "Fecioară", "Cumpăna", "Scorpie", "Arcaș", "Țap", "Vărsător", "Pești", "fecioara", "balanta", "scorpion", "sagetator", "capricorn", "varsator", "pesti" };
+            string starSign = zodiac[rand.Next(zodiac.Length)].ToLower();
+            Console.Write("With star sign {0}, result is:\n", starSign);
+            ConditionalStatements.TestThree.Zodiac(starSign);
         }
     }
 }
