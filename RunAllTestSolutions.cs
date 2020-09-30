@@ -1,9 +1,9 @@
 ﻿using System;
 
-using JuniorMind.TestDataGenerator;
 using JuniorMind.FirstApp;
 using JuniorMind.BaseVariableTypes;
 using JuniorMind.VariablesAndStatements;
+using JuniorMind.ConditionalStatements;
 
 namespace JuniorMind
 {
@@ -16,13 +16,13 @@ namespace JuniorMind
             Console.WriteLine("1.1 Solution");
             FirstApp.TestOne.PrintHelloWorld();
 
-            Console.WriteLine("\n2.1 Solution");
+            Console.WriteLine("\n2.1 Solutions");
             BaseVariableTypes.TestOne.TruAndTru();
             BaseVariableTypes.TestOne.TruOrTru();
             BaseVariableTypes.TestOne.TruXorTru();
             BaseVariableTypes.TestOne.NotTrue();
 
-            Console.WriteLine("\n2.2 Solution");
+            Console.WriteLine("\n2.2 Solutions");
             BaseVariableTypes.TestTwo.ProblemOne();
             BaseVariableTypes.TestTwo.ProblemTwo();
             BaseVariableTypes.TestTwo.ProblemThree();
@@ -35,11 +35,11 @@ namespace JuniorMind
             BaseVariableTypes.TestTwo.ProblemTen();
             BaseVariableTypes.TestTwo.ProblemEleven();
 
-            Console.WriteLine("\n2.3 Solution");
+            Console.WriteLine("\n2.3 Solutions");
             BaseVariableTypes.TestThree.ProblemOne();
             BaseVariableTypes.TestThree.ProblemTwo();
 
-            Console.WriteLine("\n3.1 Solution");
+            Console.WriteLine("\n3.1 Solutions");
             int a = rand.Next(1, 15);
             int b = rand.Next(1, 100);
             double c = rand.NextDouble() * 10;
@@ -50,7 +50,7 @@ namespace JuniorMind
             Console.Write("Input value was {0}, result: ", a);
             VariablesAndStatements.TestOne.IsNumberOdd(a);
 
-            Console.WriteLine("\n3.2 Solution");
+            Console.WriteLine("\n3.2 Solutions");
             int x = rand.Next(2, 20);
             int y = rand.Next(100, 1000);
             int z = rand.Next(1, 30);
@@ -60,6 +60,8 @@ namespace JuniorMind
             VariablesAndStatements.TestTwo.CarTravel(a, b);
             Console.Write("Group 1: {0}, StudBudget: {1}, Days: {2}, Group2: {3}, TotalBudget: {4}, result: ", x, y, z, w, q);
             VariablesAndStatements.TestTwo.StudentDays(x, y, z, w, q);
+
+            Console.WriteLine("\n3.3 Solutions");
             double areaWidth = rand.Next(4, 10);
             double areaLength = rand.Next(4, 10);
             double tileSide = rand.Next(2, 4);
@@ -71,6 +73,16 @@ namespace JuniorMind
             double flooringLength = rand.Next(2, 4);
             Console.Write("With the following width: {0}, length: {1}, flooringWidth: {2}, flooringLength: {2} result is: ", roomWidth, roomLength, flooringWidth, flooringLength);
             VariablesAndStatements.TestThree.LaminatedFlooringRequirement(roomWidth, roomLength, flooringWidth, flooringLength);
+
+            Console.WriteLine("\n4.1 Solutions");
+            Console.Write("With values: {0}, {1} result is: ", x, w);
+            ConditionalStatements.TestOne.MinimumOfTwoNumbers(x, w);
+            Console.Write("With contestant: Ion {0} and contestant: Vasile {1} result is: ", q, y);
+            ConditionalStatements.TestOne.RaceWinner("Ion", q, "Vasile", y);
+
+            Console.WriteLine("\n4.2 Solutions");
+            Console.Write("With input: {0} result is: ", q);
+            ConditionalStatements.TestTwo.FizzBuzz(q);
         }
     }
 }

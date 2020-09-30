@@ -1,5 +1,4 @@
 ﻿using System;
-using JuniorMind;
 
 namespace JuniorMind
 {
@@ -7,8 +6,9 @@ namespace JuniorMind
     {
         public static void Main(string[] args)
         {
-            RunAllTestSolutions.RunSolutions();
+            int a = Convert.ToInt32(Console.ReadLine());
 
+            Console.WriteLine();
         }
     }
 }

@@ -8,6 +8,5 @@ namespace JuniorMind.VariablesAndStatements
 
         public static void LaminatedFlooringRequirement(double width, double length, double flooringWidth, double flooringLength) => Console.WriteLine(Math.Ceiling(((width * length) / (flooringWidth * flooringLength)) * 1.15));
 
-
     }
 }
