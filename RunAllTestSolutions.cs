@@ -4,6 +4,7 @@ using JuniorMind.FirstApp;
 using JuniorMind.BaseVariableTypes;
 using JuniorMind.VariablesAndStatements;
 using JuniorMind.ConditionalStatements;
+using JuniorMind.Loops;
 
 namespace JuniorMind
 {
@@ -91,6 +92,17 @@ namespace JuniorMind
             string starSign = zodiac[rand.Next(zodiac.Length)].ToLower();
             Console.Write("With star sign {0}, result is:\n", starSign);
             ConditionalStatements.TestThree.Zodiac(starSign);
+
+            Console.WriteLine("\n5.1 Solutions");
+            string[] input = { rand.Next(-100, 10).ToString(), rand.Next(-10, 10).ToString(), rand.Next(-5, 5).ToString(), rand.Next(-10, 1).ToString(), rand.Next(-30, 30).ToString(), "x" };
+            Loops.TestOne.Multiplication(input);
+            int[] numbers = { rand.Next(-100, 100), rand.Next(5, 5), rand.Next(-500, 500), rand.Next(-8, 13), rand.Next(44, 46), rand.Next(-55, -2), rand.Next(), rand.Next(), 0 };
+            Loops.TestOne.MinNumber(numbers);
+            Loops.TestOne.SumofSquares(rand.Next());
+            Loops.TestOne.CountPositiveNumbers(input);
+
+            Console.WriteLine("\n5.2 Solutions");
+
         }
     }
 }
